@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { InfoPerso } from '../modele/info.models';
+import { InformationService } from '../services/information.services';
 
 @Component({
   selector: 'app-endpage',
@@ -6,14 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./endpage.component.scss']
 })
 export class EndpageComponent implements OnInit {
-
-  location!:string;
-  pseudo!:string;
-  constructor() { }
+  @Input() infoPerso!:InfoPerso;
+  constructor(private informationService: InformationService) { }
 
   ngOnInit(): void {
-    this.location = "ITD 26 bis Ambaniala Itaosy";
-    this.pseudo = "Spyle23"
+    this.infoPerso = this.informationService.getInfoAll();
   }
+  
 
 }
