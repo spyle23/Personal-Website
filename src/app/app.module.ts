@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { EndpageComponent } from './endpage/endpage.component';
+import { PortfolioListComponent } from './portfolio-list/portfolio-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     LandingPageComponent,
-    EndpageComponent
+    EndpageComponent,
+    PortfolioListComponent
   ],
   imports: [
     BrowserModule,
