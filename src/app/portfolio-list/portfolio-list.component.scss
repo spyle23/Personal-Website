@@ -1,20 +1,29 @@
 div.container-fluid{
     height: max-content;
-    padding-top: 200px;
+    padding-top: 120px;
     text-align: center;
+    position: relative;
+    display: flex;
+    padding-bottom: 100px;
     // background-color: rgb(43, 57, 180);
 }
 div.container-fluid div.information{
     width: 40%;
-    height: 80vh;
-    margin-top: 60px;
+    height: max-content;
+    margin-top: 20px;
+    margin-left: 20px;
     padding: 20px;
     text-align: center;
     border: 2px solid rgb(43, 57, 180);
     border-radius: 20px;
     box-shadow: 1px 1px 2px rgb(43, 57, 180);
 }
+
 div.container-fluid div.information div.profile{
+    width: 100%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5V3Tto665TOc56YuvNbHNzTMK_lsBUBn7Ow&usqp=CAU");
+    border: 2px solid rgb(43, 57, 180);
+    border-radius: 20px;
     margin-bottom: 30px;
 }
 div.container-fluid div.information div.profile img{
@@ -34,5 +43,41 @@ div.container-fluid div.information div.personnelle a{
     padding: 10px;
     color: rgb(43, 57, 180);
 }
+div.container-fluid div.information div.ligne{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 2px;
+    border: 2px solid rgb(43, 57, 180);
+}
+div.container-fluid div.information div.competence{
+    margin-top: 30px;
+    text-align: left;
+}
+div.container-fluid div.information div.competence ul li{
+    list-style-type: none;
+    font-size: 1.3em;
+}
 
+div.container-fluid div.parcours{
+    text-align: left;
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: max-content;
+}
+div.container-fluid div.parcours div.formation{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid rgb(43, 57, 180);
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px rgb(43, 57, 180);
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+    margin-top: 260px;
+}
 
