@@ -1,0 +1,32 @@
+div.container{
+    width: 700px;
+    margin-top: 200px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 2px solid rgb(43, 57, 180);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgb(43, 57, 180);
+    transition: 1s;
+}
+h3{
+    margin: 20px;
+    text-align: center;
+    color: var(--bs-secondary);
+}
+p{
+    font-size: 1.2em;
+}
+img{
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+.btn{
+    color: var(--bs-secondary);
+    border: 2px solid var(--bs-secondary);
+}
+.btn:hover{
+    background-color: var(--bs-secondary);
+    color: antiquewhite;
+}

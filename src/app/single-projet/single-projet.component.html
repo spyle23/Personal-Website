@@ -1,0 +1,10 @@
+<div class="container">
+    <h3>titre: {{projetInfo.title | titlecase}}</h3>
+    <p>description: {{projetInfo.description}} <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa pariatur sunt sint magni architecto facilis magnam ullam exercitationem vel eveniet rerum quibusdam quisquam debitis, voluptatum eligendi sit fuga quasi nam.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio velit quia magnam dolor consequatur cum laudantium labore rem voluptatum, dolore veniam suscipit pariatur doloremque molestiae iure natus ratione quos voluptatibus.
+    </p>
+    <img [src]="projetInfo.urlImage" width="600px" height="400px">
+    <button class="btn" (click)="onReturn()">precedent</button>
+</div>
+

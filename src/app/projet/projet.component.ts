@@ -1,6 +1,8 @@
-import { trigger } from '@angular/animations';
+
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ProjetInfo } from '../modele/projet.models';
+
 
 @Component({
   selector: 'app-projet',
@@ -9,17 +11,12 @@ import { ProjetInfo } from '../modele/projet.models';
 })
 export class ProjetComponent implements OnInit {
   @Input() projetInfo!:ProjetInfo;
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+    
   }
-  onOpenModal(): void{
-    const modalContainer = document.querySelector(".modal-container");
-    const modalTrigger = document.querySelectorAll(".modal-trigger");
-
-    modalTrigger.forEach(trigger => trigger.addEventListener("click", () =>{
-      modalContainer?.classList.toggle("active");
-    }))
+  onViewInfo(): void{
+        this.router.navigateByUrl(`projetInfo/${this.projetInfo.id}`);
   }
-
 }

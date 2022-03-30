@@ -6,12 +6,21 @@ import { ProjetInfo } from "../modele/projet.models";
 })
 export class ProjetInfoService{
     projetInfos: ProjetInfo[] = [
-        {"title": "presentation", "description": "it's a static website that I built with a basic language: HTML and CSS"},
-        {"title": "PersonnalWebsite", "description": "A website SPA created for training with Angular"},
-        {"title": "CalculatriceQt", "description": "A simple calculatrice with a basic operation like +, -, *, /"},
-        {"title": "calculatriceJS", "description": "calculatrice for training with DOM Javascript"}
+        {"id":1,"title": "presentation", "description": "it's a static website that I built with a basic language: HTML and CSS","urlImage": "../../assets/sitePresentation.png "},
+        {"id":2,"title": "PersonnalWebsite", "description": "A website SPA created for training with Angular", "urlImage": "../../assets/capture.png"},
+        {"id":3,"title": "CalculatriceQt", "description": "A simple calculatrice with a basic operation like +, -, *, /", "urlImage": "../../assets/calculatrice.png"},
+        {"id":4,"title": "calculatriceJS", "description": "calculatrice for training with DOM Javascript", "urlImage": "../../assets/CalculatriceJS.png"}
     ]
     getProjetInfoAll(): ProjetInfo[] {
         return this.projetInfos;
+    }
+    getProjetById(projetId : number): ProjetInfo{
+        const idProjet = this.projetInfos.find(projetInfo => projetInfo.id === projetId);
+        if (!idProjet) {
+            throw new Error("le projet n'existe pas");   
+        }
+        else{
+            return idProjet;
+        }
     }
 }
