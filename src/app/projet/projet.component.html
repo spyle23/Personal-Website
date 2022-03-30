@@ -1,0 +1,15 @@
+<div class="container">
+    <h3>titre: {{projetInfo.title | titlecase}}</h3>
+    <p>description: {{projetInfo.description}}</p>
+    <button type="button" class="btn modal-trigger" (click)="onOpenModal()">voir le projet</button>
+    <div class="modal-container">
+        <div class="overlay modal-trigger" (click)="onOpenModal()"></div>
+        <div class="modal-content">
+            <h1>{{projetInfo.title | titlecase}}</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, maxime labore. Corporis, hic accusamus numquam autem accusantium eligendi corrupti distinctio labore error molestias doloribus beatae nam reiciendis veritatis, doloremque repellendus!
+                <img [src]="projetInfo.urlImage" alt="photo" width="400px" height="400px">
+            </p>
+            <button class="btn modal-trigger" (click)="onOpenModal()">fermer</button>
+        </div>
+    </div>
+</div>

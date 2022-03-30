@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="formationInfo">
+        <h3>{{formationInfo.etablissement | titlecase}} de {{formationInfo.debut | date: "yyy"}} à {{formationInfo.fin | date: "yyy"}}</h3>
+        <h4 *ngIf="formationInfo.departement">{{formationInfo.departement | titlecase}}</h4>
+        <p *ngIf="formationInfo.parcours">parcours de {{formationInfo.parcours}}</p>
+        <p *ngIf="formationInfo.certificat">j'ai obtenu le {{formationInfo.certificat}}</p>        
+    </div>
+</div>

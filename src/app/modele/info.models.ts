@@ -6,3 +6,11 @@ export class InfoPerso{
     location!:string;
     pseudo!:string;
 }
+export class FormationInfo{
+    etablissement!:string;
+    departement?:string;
+    debut!:Date;
+    fin!:Date;
+    certificat?:string;
+    parcours?:string;
+}

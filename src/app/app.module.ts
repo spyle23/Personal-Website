@@ -7,6 +7,9 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { EndpageComponent } from './endpage/endpage.component';
 import { PortfolioListComponent } from './portfolio-list/portfolio-list.component';
+import { FormationComponent } from './formation/formation.component';
+import { ProjetListComponent } from './projet-list/projet-list.component';
+import { ProjetComponent } from './projet/projet.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { PortfolioListComponent } from './portfolio-list/portfolio-list.componen
     NavigationComponent,
     LandingPageComponent,
     EndpageComponent,
-    PortfolioListComponent
+    PortfolioListComponent,
+    FormationComponent,
+    ProjetListComponent,
+    ProjetComponent
   ],
   imports: [
     BrowserModule,

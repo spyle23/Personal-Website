@@ -1,3 +1,4 @@
+
 div.container-fluid{
     height: max-content;
     padding-top: 120px;
@@ -69,15 +70,21 @@ div.container-fluid div.parcours{
 }
 div.container-fluid div.parcours div.formation{
     width: 100%;
-    height: 200px;
+    height: max-content;
     padding: 10px;
+    // overflow-y: scroll;
     border: 2px solid rgb(43, 57, 180);
     border-radius: 20px;
     box-shadow: 1px 1px 2px rgb(43, 57, 180);
     margin-bottom: 20px;
 }
 h1{
+    color: var(--bs-secondary);
     text-align: center;
     margin-top: 260px;
+}
+
+div.container-fluid div.parcours div.formation h2{
+    color: var(--bs-secondary);
 }
 
