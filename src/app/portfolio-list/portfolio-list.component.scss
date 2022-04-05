@@ -23,6 +23,9 @@ div.container-fluid div.information{
 div.container-fluid div.information div.profile{
     width: 100%;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5V3Tto665TOc56YuvNbHNzTMK_lsBUBn7Ow&usqp=CAU");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border: 2px solid rgb(43, 57, 180);
     border-radius: 20px;
     margin-bottom: 30px;
@@ -70,9 +73,10 @@ div.container-fluid div.parcours{
 }
 div.container-fluid div.parcours div.formation{
     width: 100%;
-    height: max-content;
+    height: 510px;
+
     padding: 10px;
-    // overflow-y: scroll;
+     overflow-y: scroll;
     border: 2px solid rgb(43, 57, 180);
     border-radius: 20px;
     box-shadow: 1px 1px 2px rgb(43, 57, 180);
@@ -87,4 +91,38 @@ h1{
 div.container-fluid div.parcours div.formation h2{
     color: var(--bs-secondary);
 }
+
+/*------------------------------------------------responsive design---------------------------------*/
+
+@media screen and (max-width: 700px) {
+   div.container-fluid div.information{
+        width: 50%;
+        height: 510px;
+        overflow-y: scroll;
+        flex-direction: row;
+        padding-bottom: 1px;
+    }
+    div.parcours div.projet{
+        transform: translateX(-50%);    
+    }
+}
+@media screen and (max-width: 590px) {
+    div.container-fluid{
+        flex-flow: row wrap;
+    }
+    div.container-fluid div.information{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.container-fluid div.parcours{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.container-fluid div.parcours div.formation{
+        transform: translateX(0);
+    }
+}
+
 

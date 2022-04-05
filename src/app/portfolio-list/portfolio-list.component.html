@@ -2,7 +2,7 @@
 <div class="container-fluid">
     <div class="information">
         <div class="profile">
-            <img src="../../assets/Andriatiana Jean-Marie.jpg" width="250px" height="250px" alt="profile">
+            <img src="../../assets/Andriatiana Jean-Marie.jpg" width="50%" height="30%" alt="profile">
         </div>
         <div class="personnelle">
             <h2>{{infoPerso.nom | uppercase}}</h2>
@@ -55,7 +55,7 @@
         <h2>formations</h2>
         <app-formation *ngFor="let formationInfo of formationInfos" [formationInfo]="formationInfo"></app-formation>
       </div>
-      <div class="formation">
+      <div class="formation projet">
         <h2>projets</h2>
         <app-projet-list></app-projet-list>
       </div>
