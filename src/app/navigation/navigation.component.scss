@@ -1,0 +1,20 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--bs-secondary);
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: antiquewhite;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {color: var(--bs-success); background-color: lighten($color: #2c3e50, $amount: 1.5);}
+  .dropdown:hover .dropdown-content {display: block;}

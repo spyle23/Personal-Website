@@ -10,7 +10,7 @@ import { PortfolioListComponent } from './portfolio-list/portfolio-list.componen
 import { FormationComponent } from './formation/formation.component';
 import { ProjetListComponent } from './projet-list/projet-list.component';
 import { ProjetComponent } from './projet/projet.component';
-import { SingleProjetComponent } from './single-projet/single-projet.component';
+import { SingleProjetComponent } from './single-projet/single-projet.component';  
 
 @NgModule({
   declarations: [
